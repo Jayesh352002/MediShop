@@ -1,0 +1,163 @@
+.main-cart{
+	margin-left: 50px;
+	margin-top: 40px;
+	width: 55%;
+	height: auto;
+	background-color: white;
+	border-style: solid;
+	border-color: white;
+	box-shadow: 5px 10px 18px #888888;
+}
+.price-info{
+	width: 30%;
+	height: auto;
+	background-color: white;
+	border-style: solid;
+	border-color: white;
+	box-shadow: 5px 10px 18px #888888;
+	margin-left: 900px;
+	margin-top: -410px;
+
+}
+.my-cart{
+	font-weight: bold;
+}
+.top-div{
+	display: inline-flex;
+
+}
+.deliver-text{
+	margin-left: 330px;
+	margin-top: 10px;
+}
+.mid-div{
+	height: auto;
+	display: inline-flex;
+}
+.mid-img{
+	width: 150px;
+	height: 130px;
+	border-style: solid;
+	border-width: 0.5px;
+	padding: 5px;
+	margin: 20px;
+}
+.tab-name{
+	margin-top: 15px;
+	margin-left: 10px;
+}
+.tab-dis{
+	margin-left: 12px;
+}
+.rs{
+	margin-left: 12px;
+}
+.p-d{
+	margin-left: 12px;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.save{
+	text-decoration: none;
+	margin-left: 20px;
+	font-size: 20px;
+	font-weight: bold;
+	color: black;
+}
+.save:hover{
+	color: blue;
+}
+.remove{
+	text-decoration: none;
+	margin-left: 10px;
+	font-size: 20px;
+	font-weight: bold;
+	color: black;
+}
+.remove:hover{
+	color: blue;
+}
+.place-order{
+	width: 280px;
+	background-color: #ff4500;
+	font-size: 18px;
+	text-align: center;
+	padding: 10px;
+	margin: 20px 20px 20px 420px;
+	display: inline-block;
+	border-style: none;
+	border-width: 11%
+	font-weight: bolder;
+	color: white;
+}
+.my-cart{
+	margin-left: 15px;
+	margin-top: 1px;
+}
+.inp{
+	margin-left: 20px;
+	margin-top: 7px;
+
+}
+.div-place{
+	box-shadow: 5px 10px 25px #888888;
+	margin-top: 30px;
+}
+.item-info{
+	display: inline-flex;
+}
+.first-p{
+	margin: 10px 0px 0px 20px;
+}
+.first-it{
+	margin-top: 10px;
+}
+.first-item{
+	margin-top: 10px;
+}
+.second-p{
+	margin-left: 210px;
+	margin-top: 10px;
+}
+.third-p{
+	margin-top: 10px;
+}
+.d-charge{
+	display: inline-flex;
+}
+.first-p1{
+	margin: 10px 0px 0px 20px;
+}
+.second-p1{
+	margin-left: 185px;
+	margin-top: 10px;
+}
+.total{
+	display: inline-flex;
+}
+.first-p2{
+	margin: 10px 0px 0px 20px;
+	font-size: 20px;
+	font-weight: bold;
+}
+.second-p2{
+	margin-left: 176px;
+	margin-top: 10px;
+	font-size: 20px;
+	font-weight: bold;
+}
+.third-p2{
+	margin-top: 10px;
+	font-size: 20px;
+	font-weight: bold;	
+}
+.price{
+	margin: 10px;
+	font-weight: bold;
+	font-size: 20px;
+
+}
+
