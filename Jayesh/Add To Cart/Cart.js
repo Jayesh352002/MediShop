@@ -2,6 +2,7 @@ var i1 = document.getElementById('no').value;
 disable();
 function disable()
 {
+	var i1 = document.getElementById('no').value;
 	if(i1=="1")
 	{
 		//alert(i1);
@@ -22,12 +23,13 @@ function add()
 	var i = document.getElementById('it-det');
 	var rs = document.getElementById('r').innerHTML;
 	var rs1 = document.getElementById('r');
-	if(parseInt(inp)>=1)
+	var a = ++inp;
+	if(parseInt(a)>=1)
 	{
 		//alert(parseInt(inp))
-		sub();
+		sub_inner();
 	}
-	var a = ++inp;
+	
 	p.value = a;
 	var b = parseInt(total)+70;
 	t.innerHTML = b ;
@@ -37,17 +39,22 @@ function add()
 	rs1.innerHTML = d;
 	//alert(p.value)
 }
-
+function sub_inner()
+{
+	var i1 = document.getElementById('no').value;
+	i1++;
+	if(i1=='1')
+	{
+		document.getElementById('minus').disabled = true;
+		//disable();
+	}
+	else{
+		document.getElementById('minus').disabled = false;
+	}
+}
 function sub()
 {
-	//alert("Sub Called");
-	//var i1 = document.getElementById('no').value;
-	if(i1=="1")
-	{
-		disable();
-	}
-	document.getElementById('minus').disabled = false;
-	var inp = document.getElementById('no').value;
+	var i1 = document.getElementById('no').value;
 	var p = document.getElementById('no');
 	var total = document.getElementById('total-price').innerHTML;
 	var t = document.getElementById('total-price');
@@ -55,8 +62,18 @@ function sub()
 	var i = document.getElementById('it-det');
 	var rs = document.getElementById('r').innerHTML;
 	var rs1 = document.getElementById('r');
-	var a = --inp;
-	p.value = a;
+	var a = --i1;
+
+	if(a=='1')
+	{
+		document.getElementById('minus').disabled = true;
+		//disable();
+	}
+	else{
+		document.getElementById('minus').disabled = false;
+	}
+	//var inp = document.getElementById('no').value;
+		p.value = a;
 	var b = parseInt(total)-70;
 	t.innerHTML = b ; 
 	var c = parseInt(item)-1; 
@@ -73,6 +90,11 @@ function save()
 	//document.getElementById('save').style.color = "gray";
 }
 
+function remove()
+{
+	alert("Your Item is Removed From Cart....")
+}
+
 function open()
 {
 	//alert("Open Called")
@@ -81,10 +103,4 @@ function open()
 	
 	//window.location = "Cart.html";
 	//imageLoad()
-}
-function imageLoad()
-{
-	//alert("ImageLoad Called")
-
-	document.getElementById('med-img').src = "crocin.jpg";
 }
