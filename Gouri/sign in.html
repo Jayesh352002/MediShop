@@ -2,8 +2,10 @@
 <head>
 	<title>Online Booking Medicine </title>
 	<link rel="stylesheet" href="style.css">
+
 </head>
 <body>
+	
 	<div class="hero">
 
 		<div class="form-box">
@@ -20,39 +22,27 @@
 
 	</div>
 	<form id="Login" class="input-group">
-		<input type="text" class="input-field" placeholder="User Id" required><br>
-		<input type="Password" class="input-field" placeholder="Password" required><br>
+		<input id="user_id" type="text" class="input-field" placeholder=" User Id " required><br>
+		<input id="password" type="Password" class="input-field" placeholder=" Password " required><br>
 		<input type="checkbox" class="check-box"><span> Remember Password</span><br>
-		<button type="submit" class="submit-btn">Log in</button>
+		<button type="submit" class="submit-btn" >Log in</button>
 </form>
 
-<form id="register" class="input-group">
-		<input type="text" class="input-field" placeholder="User Id" required><br>
+<form id="register" class="input-group" name="registerForm">
+		<input id="name" type="text" class="input-field" placeholder=" Name " name="regName" required><br>
+		<input id="email" type="text" class="input-field" placeholder=" Email ID" name="regEmail" required><br>
+		<input id="mobile" type="text" class="input-field" placeholder=" Mobile No " name="regMobile" required><br>
 
-		<input type="email" class="input-field" placeholder="Email id" required><br>
-		<input type="Password" class="input-field" placeholder="Password" required><br>
-		<input type="checkbox" class="check-box"><span>I agree to the terms $ condition </span><br>
-		<button type="submit" class="submit-btn">Register</button>
+		<input id="user_name" type="text" class="input-field" placeholder=" Username " name="regUsername" required><br>
+		<input id="pass" type="Password" class="input-field" placeholder=" Password" name="regPass" required><br>
+		<input id="c_pass" type="Password" class="input-field" placeholder=" Confirm Password " 
+		name="regCPass" required><br>
+
+		<input type="checkbox" class="check-box"><span> I agree to the terms $ condition </span><br>
+		<button class="submit-btn" onclick="reg()">Register</button>
 </form>
 </div>
 </div>
-<script>
-	
-	var x=document.getElementById("Login");
-	var y=document.getElementById("register");
-	var z=document.getElementById("btn");
-
-		function register(){
-		x.style.left="-400px";
-		y.style.left="50px";
-		z.style.left="110px";
-							}
-
-		function Login(){
-		x.style.left="50px";
-		y.style.left="450px";
-		z.style.left="110";
-						}
-</script>
- </body>
+	<script type="text/javascript" src="Login.js"></script>
+</body>
 </html> 	
