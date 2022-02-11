@@ -95,12 +95,12 @@ function remove()
 	alert("Your Item is Removed From Cart....")
 }
 
-function open()
+function buy()
 {
-	//alert("Open Called")
-	window.open("https://www.w3schools.com");
-	var a1 = document.getElementById('crocin');
-	
-	//window.location = "Cart.html";
-	//imageLoad()
+	window.open("Order.html");
 }
+
+
+
+
+
