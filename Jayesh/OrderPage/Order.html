@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="Order.css">
+  	<title>Bootstrap Example</title>
+  	<meta charset="utf-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+  	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+</head>
+<body>
+	<nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="javascript:void(0)">MediShop</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="mynavbar">
+      <ul class="navbar-nav me-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="HomePage.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="sign in.html">Login</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Medicines.html">Medicines</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="javascript:void(0)">About Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Cart.html">Cart</a>
+        </li>
+      </ul>
+      <form class="d-flex">
+        <input class="form-control me-2" type="text" placeholder="Search">
+        <button class="btn btn-primary" type="button">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
+
+<div class="main-order">
+<div class="order">
+<h2 style="margin: 30px 0px 30px 100px ; text-decoration: underline; font-weight: bold;">Order Confirmation Details</h2>
+	<form name="placeOrder">
+  		<div class="row" style="margin-top: 20px;">
+    		<div class="col">
+      			<input type="text" class="form-control" id="fname" placeholder="First Name" 
+      			name="firstname" required>
+    		</div>
+    		<div class="col">
+      			<input type="text" class="form-control" id="lname" placeholder="Last Name" 
+      			name="lastname" required>
+    		</div>
+  		</div>
+  		<select class="form-select" style="margin-top: 20px;" id="state" onchange="newCity()">
+		  <option>Assam</option>
+		  <option>Bihar</option>
+		  <option>Gujrat</option>
+		  <option>Himachal Pradesh</option>
+		  <option>Kerla</option>
+		  <option>Madhya Pradesh</option>
+		  <option>Maharashtra </option>
+		  <option>Punjab</option>
+		  <option>Rajasthan</option>
+  		  <option>Tamil Nadu</option>
+		</select>
+		<select class="form-select" style="margin-top: 20px;" id="city">
+		  <option>Guwahati</option>
+  		  <option>Lakhipur</option>
+		</select>
+		<label for="comment" style="margin-top: 20px;">Delivery Addres:</label>
+		<textarea class="form-control" rows="5" id="address" name="dAddr" required></textarea>
+		<div class="row" style="margin-top: 20px;">
+    		<div class="col">
+      			<input type="number" class="form-control" id="mobileNo" placeholder="Mobile No" 
+      			name="mobile" required>
+    		</div>
+    		<div class="col">
+      			<input type="number" class="form-control" id="aMobileNo" 
+      			placeholder="Alternate Mobile No " name="AMobile" required>
+    		</div>
+  		</div>
+
+  		<hr>
+
+  		<h2 style="margin: 30px 0px 30px 180px ; text-decoration: underline; font-weight: bold;">Payments Details</h2>
+
+  		<select class="form-select" style="margin-top: 20px;" id="paymentMode">
+		  <option>Credit Card</option>
+  		  <option>Debit Card</option>
+  		  <option>Net Banking</option>
+  		  <option>UPI</option>
+		</select>
+		<input type="number" class="form-control" id="cardNumber" placeholder="Card No" name="cardno" style="margin-top: 20px;" required>
+		<div class="row" style="margin-top: 20px;">
+    		<div class="col">
+    			<label>Expairy Date</label>
+      			<input type="date" class="form-control" id="expDate" placeholder="Expairy Date" name="ExpairyDate" required>
+    		</div>
+    		<div class="col">
+    			<label>CVV</label>
+      			<input type="password" class="form-control" id="cvv" placeholder="CVV No " name="cvv" required>
+    		</div>
+  		</div>
+  		<input type="text" class="form-control" id="CHname" placeholder="Card Holder Name" name="cardName" style="margin-top: 20px;" required>
+	</form>
+	<button type="button" class="btn btn-primary btn-block" onclick="success()" style="margin-top: 40px; width: 100%;">Buy Now</button>
+</div>
+<div class="order-summary">
+	<h2 style="margin: 30px 0px 30px 100px ; text-decoration: underline; font-weight: bold;">Order Summary</h2>
+	<div class="os-main">
+		<div class="os-one">
+			<img src="o2.png" class="os-img">
+		</div>
+		<div class="os-second">
+			<p class="tab-title">O2 Tablet </p>
+			<p class="tab-des">Tablet for Stomach Pain</p>
+			<p class="tab-quan">Quantity : </p>
+			<p class="tab1" id="one">1</p>
+			<p class="tab2">Strip ( </p>
+			<p class="tab3" id="two">10 </p>
+			<p class="tab4"> Tablets )</p>
+		</div>
+	</div>
+	<hr>
+	<div class="inc-quan">
+		<div>
+			<p style="margin-left: 20px;">Increased Quantity : </p>
+		</div>
+		<div>
+			<button type="button" class="btn btn-outline-light text-dark" style="border-radius: 50%; border-color: black; font-size: 18px; margin-left: 50px; margin-top: -5px;" id="minus" onclick="sub()">-</button>
+		<input type="text" name="" value="1" disabled style="width: 70px; margin-left: 2px; text-align: center;" id="no">
+		<button type="button" class="btn btn-outline-light text-dark" style="border-radius: 50%; border-color: black; font-size: 18px; margin-left: 6px; margin-top: -5px;" id="add" onclick="add()">+</button>
+		</div>
+	</div>
+	<hr>
+	<div class="amount-main">
+		<div>
+			<p class="p1">Item Name</p>
+			<p class="p4">O2 Tablet</p>
+		</div>
+		<div>
+			<p class="p2">Quantity</p>
+			<p class="p5">x</p>
+			<p class="p7" id="three">1</p>
+		</div>
+		<div>
+			<p class="p3">Amount</p>
+			<p class="p6">Rs </p>
+			<p class="p8" id="four">70</p>
+		</div>
+	</div>
+	<hr>
+	<div class="total-money">
+		<div class="m-t">
+			<p class="tm">Total Money </p>
+		</div>
+		<div class="m-q">
+			<p class="mq" id="five">1 </p>
+			<p class="mq1">Strip ( </p>
+			<p class="mq2" id="six">10</p>
+			<p class="mq3"> Tablet)</p>
+		</div>
+		<div class="m-r">
+			<p class="mr">Rs  </p>
+			<p class="mr1" id="seven"> 70</p>
+		</div>
+		
+	</div>
+
+</div>
+</div>
+<script type="text/javascript" src="Order.js"></script>
+</body>
+</html>
