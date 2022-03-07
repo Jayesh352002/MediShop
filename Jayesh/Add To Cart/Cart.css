@@ -160,4 +160,10 @@ input::-webkit-inner-spin-button {
 	font-size: 20px;
 
 }
-
+.user{
+	width: 50px;
+	height: 40px;
+	border-radius: 50%;
+	cursor: pointer;
+	margin-left: -10px;
+}
