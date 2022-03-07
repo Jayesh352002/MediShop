@@ -147,3 +147,10 @@
 	margin-top: -40px;
 	margin-left: 61px;
 }
+.user{
+	width: 50px;
+	height: 40px;
+	border-radius: 50%;
+	cursor: pointer;
+	margin-left: -10px;
+}
