@@ -1,0 +1,156 @@
+.main-order{
+	display: inline-flex;
+}
+.order{
+	width: 660px;
+	height: auto;
+	margin-left: 40px;
+	margin-top: 40px;
+	padding: 15px;
+	box-shadow: 5px 10px 18px #888888;
+	margin-bottom: 30px;
+}
+.order-summary{
+	width: 480px;
+	height: auto;
+	margin-left: 100px;
+	margin-top: 40px;
+	padding: 15px;
+	box-shadow: 5px 10px 18px #888888;
+	margin-bottom: 30px;	
+}
+.os-main{
+	display: inline-flex;
+}
+.os-img{
+	margin-left: 20px;
+	margin-top: 20px;
+	width: 150px;
+	height: 100px;
+	border-width: 1px;
+	border-color: black;
+	border-style: solid;
+}
+.tab-title{
+	margin-top: 20px;
+	margin-left: 40px;
+	font-weight: bold;
+	font-size: 18px;
+
+}
+.tab-des{
+	margin-top: -7px;
+	margin-left: 40px;
+	font-size: 15px;
+}
+.tab-quan{
+	margin-top: -8px;
+	margin-left: 40px;
+	font-size: 15px;
+}
+.tab1{
+	margin-top: -38px;
+	margin-left: 110px;
+}
+.tab2{
+	margin-top: -40px;
+	margin-left: 121px;
+}
+.tab3{
+	margin-top: -40px;
+	margin-left: 162px;
+}
+.tab4{
+	margin-top: -40px;
+	margin-left: 182px;
+}
+.inc-quan{
+	display: inline-flex;
+}
+.amount-main{
+	display: inline-flex;
+}
+.p1{
+	margin-left: 20px;
+	margin-top: 10px;
+}
+.p2{
+	margin-left: 90px;
+	margin-top: 10px;
+}
+.p3{
+	margin-left: 90px;
+	margin-top: 10px;
+}
+.p4{
+	margin-left: 20px;
+	margin-top: 10px;
+}
+.p5{
+	margin-left: 110px;
+	margin-top: 10px;
+}
+.p6{
+	margin-left: 90px;
+	margin-top: 10px;
+}
+.p7{
+	margin-top: -40px;
+	margin-left: 120px;
+}
+.p8{
+	margin-top: -40px;
+	margin-left: 110px;
+}
+.total-money{
+	display: inline-flex;
+}
+.tm{
+	font-size: 16px;
+	font-weight: bold;
+	margin-top: 20px;
+	margin-left: 20px;
+}
+.mq{
+	font-size: 16px;
+	font-weight: bold;
+	margin-top: 20px;
+	margin-left: 70px;	
+}
+.mq1{
+	font-size: 16px;
+	font-weight: bold;
+	margin-top: -40px;
+	margin-left: 83px;
+}
+.mq2{
+	font-size: 16px;
+	font-weight: bold;
+	margin-top: -40px;
+	margin-left: 128px;
+}
+.mq3{
+	font-size: 16px;
+	font-weight: bold;
+	margin-top: -40px;
+	margin-left: 149px;
+}
+.mr{
+	font-size: 16px;
+	font-weight: bold;
+	margin-top: 20px;
+	margin-left: 35px;
+}
+.mr1{
+	font-size: 16px;
+	font-weight: bold;
+	margin-top: -40px;
+	margin-left: 61px;
+}
+.user{
+	width: 50px;
+	height: 40px;
+	border-radius: 50%;
+	cursor: pointer;
+	margin-left: -10px;
+}
